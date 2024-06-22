@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* 
+  -May want to add "border-box for "box-sizing so padding does not affect width
+  -Reset margin and padding 
+ */
+}
+
+body {
+  background: url('/Gp/assets/img/mount1.jpg');
+  background-color: rgb(3, 95, 201);
+  font-family: 'Raleway', sans-serif;
+
+  /* 
+    -Background color is #344a72
+  */
+}
+
+a {
+  text-decoration: none;
+  /* 
+  Underlined links are ugly :)
+ */
+}
+
+#container {
+  
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 1000px;
+  height: 2400px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  /* 
+  -Remember, margin: auto on left and right will center a block element 
+  -I would also set a "max-width" for responsiveness
+  -May want to add some padding
+  */
+}
+
+
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+  padding: 5px;
+  /* 
+    May want to center these
+  */
+}
+
+.form-wrap .form-group {
+  color: rgb(110, 108, 105);
+  border: 2px solid rgb(255, 254, 254) ;
+  padding: 5px;
+  
+  /* 
+    Each label, input is wrapped in .form-group
+  */
+}
+
+.form-wrap .form-group label {
+  display: block;
+  margin: 10px 4px;
+  padding: 10px 4px;
+  /* 
+    Label should be turned into a block element
+  */
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+  
+  /* 
+    Inputs should reach accross the .form-wrap 100% and have some padding
+  */
+}
+
+.form-wrap button {
+  display: block;
+  color: white;
+  border: none;
+  position: relative;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 360px;
+  border-radius: 5px;
+  background: #49c1a2;
+  /* 
+    Button should wrap accross 100% and display as block
+    Background color for button is #49c1a2
+  */
+}
+
+.form-wrap button:hover {
+  margin-top: 10px;
+  background-color: #37a08e ;
+  /* 
+    Hover background color for button is #37a08e
+  */
+}
+
+.form-wrap .bottom-text {
+
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 10px;
+  
+  /* 
+    Bottom text is smaller
+  */
+}
+button {
+  position: relative;
+  top: 24px;
+}
+footer {
+  margin: 20px;
+  text-align: center;
+  color: white;
+  /* 
+  Should be centered
+ */
+}
+
+footer a {
+  color: #49c1a2;
+  /* 
+    Footer link color is #49c1a2
+  */
+}

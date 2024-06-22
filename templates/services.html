@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>services page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="{{url_for('static',filename='services.css')}}">
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Enter Personal Information</h1>
+        <form method="POST" action="{{url_for('userservices')}}" onsubmit="sendEmail(); reset();return false;">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="firstName" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="lastName" id="last-name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="Phone">Phone</label>
+            <input type="number" id="Phone" name="positiveNumber" min="0" max="9999999999" step="any" maxlength="10" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="adresss" />
+          </div>
+          
+          <h1>Enter the amount of each items</h1>
+
+
+          <div class="form-group">
+            <label for="Battery">Battery</label>
+            <input type="number" name="Battery" id="Battery" />
+          </div>
+          <div class="form-group">
+            <label for="Keyboard">Keyboard</label>
+            <input type="number" name="Keyboard" id="Keyboard" />
+          </div>
+          <div class="form-group">
+            <label for="Microwave">Microwave</label>
+            <input type="number" name="Microwave" id="Microwave" />
+          </div>
+          <div class="form-group">
+            <label for="Mobile">Mobile</label>
+            <input type="number" name="Mobile" id="Mobile" />
+          </div>
+          <div class="form-group">
+            <label for="Washing-Machine">Washing-Machine</label>
+            <input type="number" name="Washing-Machine" id="Washing-Machine" />
+          </div>
+          <div class="form-group">
+            <label for="Mouse">Mouse</label>
+            <input type="number" name="Mouse" id="Mouse" />
+          </div>
+          <div class="form-group">
+            <label for="PCB">PCB</label>
+            <input type="number" name="PCB" id="PCB" />
+          </div>
+          <div class="form-group">
+            <label for="Music-Player">Music-Player</label>
+            <input type="number" name="Music-Player" id="Music-Player" />
+          </div>
+          <div class="form-group">
+            <label for="Printer">Printer</label>
+            <input type="number" name="Printer" id="Printer" />
+          </div>
+          <div class="form-group">
+            <label for="Television">Television</label>
+            <input type="number" name="Television" id="Television" />
+          </div>
+
+          <h1>Type of delivery</h1>
+          <div class="form-group">
+            <label for="Type of delivery">Type of delivery</label>
+            <input type="text" name="Type of delivery" id="Type of delivery" />
+          </div>
+          <h1>Payment</h1>
+          <div class="form-group">
+            <label for="Card-Number">Card-Number</label>
+            <input type="number" name="Card-Number" id="Card-Number" />
+          </div>
+          <div class="form-group">
+            <label for="CVV">CVV</label>
+            <input type="number" name="CVV" id="CVV" />
+          </div>
+
+          <button type="submit" class="btn">Proceed to order</button>
+          <p class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a href="{{url_for('location')}}">Location Finder</a>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </body>
+</html>
